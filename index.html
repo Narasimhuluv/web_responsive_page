@@ -1,0 +1,317 @@
+<!-- writeCode
+
+- Create a responsive layout according to the design shown below.
+
+#### Large Screen view(Above 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-2.png)
+
+#### Small Screen view(Below 768px)
+
+1. Figure what would be the best possible way to display the layout on small screens.
+
+2. Create hmaburger icon to toggle menu on mobile view.
+
+- Using CSS resets is necessary.
+- Use semantic tags and keep the nesting and indentation proper.
+- Pay attention to the codes, your code quality matters a lot.
+- Try to implement the layout as exactly as it has been provided in the design.
+- Pay attention to minor things like spacing, alignment, size, etc.
+- Use "Nunito" font-family for the assignment.
+- Figure out the best possible way to display the layout on small screens.
+- Create hmaburger icon to toggle menu on small screen view.
+- Once you are done with the assignment connect with the mentor and get the code reviewed. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Responsive</title>
+    <link rel="stylesheet" href="assets/stylesheet/style.css">
+
+    <script src="https://kit.fontawesome.com/17bbe460ec.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class=" padding container flex justify_between align_items">
+            <h2>Alt Events</h2>
+            <nav class="nav">
+                <div class="menu">
+                    <label class="bars" for="toggle">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <input type="checkbox" id="toggle">
+
+                    <ul class="flex column items justify_center align_items">
+                       
+                        <div class="menu_inside">
+                            <label class="bars" for="toggle">
+                                <i class="fas fa-times"></i>
+                            </label>
+                            <input type="checkbox" id="toggle">
+                        </div>
+
+
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a class="btn header_btn" href="">Join Us</a></li>
+                    </ul>
+                </div>
+               
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero flex align_items">
+            <div class="hero_div column .media_padding container flex justify_between align_items padding">
+                <div class="hero_items_left flex_48">
+                    <h1 class="heading">Web Developer Conference <strong class="active">2020</strong></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate debitis similique minima voluptatum molestiae nihil expedita animi facere, dolorem enim! Nostrum consequatur, excepturi repellat voluptatem voluptate accusantium ut maxime facere!</p>
+                    <a class="btn hero_btn" href="">Register Now</a>
+                </div>
+
+                <figure class="flex_30">
+                    <img src="assets/media/hero.png" alt="">
+                </figure>
+            </div>
+        </section>
+
+        <section class="about_event">
+            <div class="container event_left flex justify_between padding align_items column">
+                <figure class="flex_35">
+                    <img src="assets/media/about.png" alt="about png">
+                </figure>
+
+                <div class="about_event_right flex_48">
+                    <h2>About The Event</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ab recusandae culpa dicta incidunt voluptate dolore qui, alias explicabo eaque debitis, fuga deserunt quasi harum, soluta architecto vero laboriosam possimus!</p>
+                    <a class="btn" href="">Know More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="join">
+            <article class="container  padding">
+                <div class="heading">
+                    <h2>Why You Should Join</h2>
+                </div>
+                <div class="join_cards column flex justify_between">
+                    <div class="card flex_30">
+                        <h3 class="count flex align_items justify_center">1</h3>
+                        <h3>Network</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus a nostrum reiciendis beatae hic rerum reprehenderit ab? Error, saepe dicta. Facilis est quae adipisci libero rerum repellendus animi eum id!</p>
+                    </div>
+
+                    <div class="card flex_30">
+                        <h3 class="count flex align_items justify_center">2</h3>
+                        <h3>Great Speaker</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus a nostrum reiciendis beatae hic rerum reprehenderit ab? Error, saepe dicta. Facilis est quae adipisci libero rerum repellendus animi eum id!</p>
+                    </div>
+
+                    <div class="card flex_30">
+                        <h3 class="count flex align_items justify_center">3</h3>
+                        <h3>Information</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus a nostrum reiciendis beatae hic rerum reprehenderit ab? Error, saepe dicta. Facilis est quae adipisci libero rerum repellendus animi eum id!</p>
+                    </div>
+
+                </div>
+            </article>
+        </section>
+
+        <section class="schedule">
+            <div class="container padding">
+                <h2>Schedule</h2>
+                <article class="flex justify_between align_items schedule_article">
+                    <div class="date date_first flex align_items">
+                        <h3>06 Sept</h3>
+                    </div>
+
+                    <div class="image">
+                        <img src="assets/media/schedule-01.jpg" alt="schedule image one">
+                    </div>
+                    
+                    <div class="schedule_data flex_65">
+                        <h3>Digital World Event Conversation</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda totam iusto cupiditate ratione voluptas blanditiis perferendis atque molestiae debitis iure iste, alias cum velit a magni ad natus architecto nobis!</p>
+                        
+                    </div>
+
+                </article>
+                <div class="line"></div>
+
+                <article class="flex justify_between align_items schedule_article">
+                    <div class="date flex align_items">
+                        <h3>07 Sept</h3>
+                    </div>
+
+                    <div class="image">
+                        <img src="assets/media/schedule-02.jpg" alt="schedule image two">
+                    </div>
+                    
+                    <div class="schedule_data flex_65">
+                        <h3>Web Designing Conversation</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda totam iusto cupiditate ratione voluptas blanditiis perferendis atque molestiae debitis iure iste, alias cum velit a magni ad natus architecto nobis!</p>
+                    </div>
+
+                </article>
+                <div class="line"></div>
+
+                <article class="flex justify_between align_items schedule_article">
+                    <div class="date flex align_items">
+                        <h3>08 Sept</h3>
+                    </div>
+
+                    <div class="image">
+                        <img src="assets/media/schedule-03.jpg" alt="schedule image three">
+                    </div>
+                    
+                    <div class="schedule_data flex_65">
+                        <h3>Digital Development Conversation</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda totam iusto cupiditate ratione voluptas blanditiis perferendis atque molestiae debitis iure iste, alias cum velit a magni ad natus architecto nobis!</p>
+                    </div>
+
+                </article>
+                <div class="line"></div>
+
+                <article class="flex justify_between align_items schedule_article">
+                    <div class="date flex align_items">
+                        <h3>09 Sept</h3>
+                    </div>
+
+                    <div class="image">
+                        <img src="assets/media/schedule-04.jpg" alt="schedule image four">
+                    </div>
+                    
+                    <div class="schedule_data flex_65">
+                        <h3>Digital Marketing Conference</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda totam iusto cupiditate ratione voluptas blanditiis perferendis atque molestiae debitis iure iste, alias cum velit a magni ad natus architecto nobis!</p>
+                    </div>
+
+                </article>
+                <a class="btn hero_btn schedule_btn" href="">Download Schedule</a>
+            </div>
+        </section>
+
+
+        <section class="icons padding ">
+            <div class="container padding">
+                <div class="icon_cards flex justify_between align_items">
+                    <div class="icon_card padding flex_23">
+                        <img src="assets/media/speaker.png" alt="speaker image">
+                        <h3>20+</h3>
+                        <p>Great Speakers</p>
+                    </div>
+
+                    <div class="icon_card padding active flex_23">
+                        <img src="assets/media/idea.png" alt="idea image">
+                        <h3>20+</h3>
+                        <p>Total Topic</p>
+                    </div>
+
+                    <div class="icon_card padding flex_23">
+                        <img src="assets/media/participants.png" alt="participants image">
+                        <h3>20+</h3>
+                        <p>Participants</p>
+                    </div>
+
+                    <div class="icon_card padding flex_23">
+                        <img src="assets/media/sponsor.png" alt="sponsor image">
+                        <h3>20+</h3>
+                        <p>Sponsors</p>
+                    </div>
+
+                   
+
+                   
+                </div>
+            </div>
+        </section>
+
+        <section class="video_section">
+            <div class="container padding ">
+               <div class="video_bg flex justify_center align_items">
+                    <img class="play_btn" src="assets/media/playbutton.svg" alt="playbutton icon">
+               </div>
+            </div>
+        </section>
+
+        <section class="latest_news">
+            <div class="container padding">
+                <h2>Our Latest News</h2>
+                <div class="news_cards flex justify_between">
+                    <div class="card flex_30">
+                        <img src="assets/media/news-01.png" alt="image 1">
+                        <h3>How to build a great portfolio as a beginner developer</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus officiis, ea nihil veritatis nobis sint impedit! Distinctio nihil fugiat officia a libero provident sunt ab. Quis perferendis esse odit nihil?</p>
+                        <a href="">Read More</a>
+                    </div>
+
+                    <div class="card flex_30">
+                        <img src="assets/media/news-02.png" alt="image 2">
+                        <h3>How to build a great portfolio as a beginner developer</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus officiis, ea nihil veritatis nobis sint impedit! Distinctio nihil fugiat officia a libero provident sunt ab. Quis perferendis esse odit nihil?</p>
+                        <a class="active" href="">Read More</a>
+                    </div>
+
+                    <div class="card flex_30">
+                        <img src="assets/media/news-03.png" alt="image 3">
+                        <h3>How to build a great portfolio as a beginner developer</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus officiis, ea nihil veritatis nobis sint impedit! Distinctio nihil fugiat officia a libero provident sunt ab. Quis perferendis esse odit nihil?</p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="container padding">
+                <div class="details flex align_items column ">
+                   <figure class="flex_30">
+                        <img src="assets/media/logo.svg" alt="logo">
+                   </figure>
+    
+                   <div class="quick_links flex_48">
+                       <h3>Quick Links</h3>
+                       <nav>
+                           <ul class="flex">
+                               <li><a href="">Program</a></li>
+                               <li><a href="">About Us</a></li>
+                               <li><a href="">Contact Us</a></li>
+                               <li><a href="">Services</a></li>
+                           </ul>
+                       </nav>
+                   </div>
+    
+                   <div class="follow flex_48">
+                       <h3>Follow Us</h3>
+                       <nav>
+                           <ul class="flex">
+                               <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                               <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+                           </ul>
+                       </nav>
+                   </div>
+                </div>
+    
+            </div>
+        </div>
+
+        <div class="copyrights">
+           <div class="container padding">
+            <small>&copy; AltCampus Services Pvt Ltd, 2018-present</small>
+           </div>
+        </div>
+    </footer>
+</body>
+</html>

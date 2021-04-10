@@ -1,0 +1,472 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Nunito Sans', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* --------------------Custom styles */
+
+.container{
+    max-width: 1500px;
+    width: 100%;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+.flex_48{
+    flex: 0 1 48%;
+    /* border: 1px solid; */
+}
+.flex_30{
+    flex: 0 1 27%;
+}
+.flex_23{
+    flex: 0 1 23%;
+}
+.flex_35{
+    flex:  0 1 35%;
+}
+.flex_65{
+    flex: 0 1 65%;
+}
+.flex{
+    display: flex;
+}
+.justify_between{
+    justify-content: space-between;
+}
+.justify_center{
+    justify-content: center;
+}
+.align_items{
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.padding{
+    padding: 3em 0;
+}
+
+/* ----------------------header styles */
+.header{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    /* border: 1px solid blue; */
+}
+.nav a{
+    margin-left: 2em;
+    font-size: 1.3em;
+    color: white;
+    text-transform: uppercase;
+}
+.header h2{
+    font-size: 2.8rem;
+    color: white;
+    font-weight: 900;
+}
+.btn{
+    display: inline-block;
+    padding: 0.6em 1.7em;
+    background-color: rgb(249,35,77);
+    margin-top: 25px;
+}
+.header_btn{
+    margin-top: -12px;
+}
+.header input, .header i{
+    display: none;
+}
+
+/* ---------------------------Hero section */
+
+.hero{
+    width: 100%;
+    background:linear-gradient(rgba(0, 0, 255, 0.534), rgba(238, 130, 238, 0.438)), url(../media/banner.png) no-repeat;
+    height: 90vh;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+.hero .heading, .about_event h2, .join .heading{
+    font-size: 4em;
+    font-weight: 900;
+    margin-bottom: 0.5em;
+}
+.hero .active{
+    color: red;
+}
+.hero p, .about_event p, .schedule_data p{
+    font-size: 1.5em;
+    line-height: 1.2;
+    margin: 15px 0;
+    color: grey;
+}
+.hero p{
+    color: white;
+}
+.hero .btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 1.2em;
+}
+.hero img{
+    width: 100%;
+}
+/* ------------------------------about the event */
+.about_event .btn{
+    padding: 12px 30px;
+    font-size: 19px;
+    display: inline-block;
+}
+.about_event img{
+    width: 100%;
+}
+/* -------------------------------join section */
+.join{
+    background-color: rgb(223,236,255);
+}
+.join .heading, .latest_news h2, .schedule h2{
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: 900;
+    margin-bottom: 1.5em;
+}
+.join h3{
+    font-size: 1.8em ;
+    font-weight: 900;
+    margin: 10px 0;
+}
+.join p{
+    line-height: 1.7;
+}
+.join .card{
+    border: dashed 2px red;
+    padding: 25px;
+}
+.join .card{
+    position: relative;
+}
+.card .count{
+    top: -35px;
+    position: absolute;
+    color: red;
+    font-size: 35px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(223,236,255) ;
+    border-radius: 50%;
+}
+/* ---------------------------------schedule section */
+.schedule_article{
+    /* margin-top: 4em; */
+}
+.schedule .line{
+    border: 2px dashed rgb(249,35,77);
+    height: 80px;
+    display: inline-block;
+    margin-left: 4em;
+
+}
+.schedule .image{
+    width: 13%;
+
+}
+.schedule img{
+    width: 100%;
+    border-radius: 1.2em;
+}
+.schedule .date{
+    width: 120px;
+    height: 120px;
+    border: 2px dashed rgb(249,35,77);
+    border-radius: 50%;
+    text-align: center;
+    color: rgb(249,35,77);
+}
+.schedule .date_first{
+    background-color: rgb(249,35,77);
+    color: white;
+}
+.date h3 , .schedule_data h3{
+    font-size: 2.3em;
+    font-weight: bold;
+}
+.schedule .schedule_btn{
+    width: 150px;
+    padding: 15px 25px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-weight: 900;
+    margin-top: 50px;
+}    
+
+/* -------------------------------icons section------------ */
+.icons{
+    background-color: rgb(223,236,255);
+}
+.icon_card{
+    text-align: center;
+    line-height: 1.5;
+}
+.icon_card h3{
+    font-size: 30px;
+    font-weight: 900;
+}
+.icon_card p{
+    font-size: 1.3em;
+}
+.icons .active{
+    background-color: rgb(249,35,77);
+}
+.icons .icon_card:hover{
+    background-color: rgb(249,35,77);
+    
+}
+/* -------------------------video section */
+.video_bg{
+    background: url(../media/banner.png) no-repeat;
+    background-size: cover;
+    height: 90vh;
+    border-radius: 35px;
+}
+.video_bg .play_btn{
+    width: 100px;
+}
+
+
+
+/* ---------------------news section */
+
+.news_cards h3{
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 13px;
+    margin-top: 10px;
+}
+.news_cards p{
+    line-height: 1.2;
+    color: grey;
+}
+.news_cards .card{
+    border: none;
+}
+.news_cards .card a{
+    color: black;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: 900;
+}
+.news_cards .card .active{
+    color: rgb(249,35,77) ;
+}
+/* -------------------------Footer  */
+
+.footer{
+    background-color: rgb(35,52,123);
+}
+footer h3{
+    font-size: 25px;
+    color: white;
+    font-weight: 900;
+    margin: 15px 0;
+}
+.quick_links, .follow {
+    margin-left: 150px;
+}
+.quick_links a, .follow a{
+    margin-right: 25px;
+    color: rgb(212, 211, 211);
+}
+.follow a{
+    font-size: 25px;
+}
+.copyrights{
+    background-color: rgb(16,33,105);
+    text-align: center;
+    color: white;
+}
+.copyrights .padding{
+    padding: 1em 0;
+}
+/* end styles */
+
+
+/* ----------------media queries */
+
+@media screen and (max-width:768px) {
+    html{
+        font-size: 12px;
+    }
+    .header .items{
+        width: 100%;
+        height: 100vh;
+        background:linear-gradient(rgba(0, 0, 255, 0.959), rgba(238, 130, 238, 0.911));
+        position: fixed;
+        text-align: center;
+        left: 0;
+        top: 0;
+        padding-top: 50%;
+        display: none;
+        transition: all 0.5s ease;
+    }
+    .menu input{
+        width: 0;
+    }
+    .menu_inside{
+        position: absolute;
+        top: 40px;
+        right: 20px;
+    }
+    #toggle:checked ~ .items{
+        display: inline-block;
+    }
+    .header .items li{
+        margin-bottom: 25px;
+        margin-left: -20px;
+    }
+    .header input, .header i{
+        display: block;
+    }
+    .hero{
+        position: relative;
+    }
+    .header h2{
+        margin-left: 20px;
+    }
+    .header .menu{
+        margin-right: 20px;
+        transition: all 0.5s ease;
+    }
+
+    
+    .header .bars{
+        font-size: 25px;
+        color: white;
+    }
+    .flex{
+        flex-wrap: wrap;
+    }
+    .flex_48{
+        flex: 0 1 100%;
+        margin-top: 5em;
+    }
+    .flex_30{
+        flex: 0 1 100%;
+        margin-top: 20px;
+    }
+    .flex_23{
+        flex: 0 1 100%;
+        margin-top: 20px;
+    }
+    .flex_65{
+        flex: 0 1 100%;
+        margin-top: 20px;
+    }
+    .hero img, .about_event img, 
+    .video_section img, .latest_news img, .schedule img{
+        width: 100%;
+    }
+    .hero{
+        height: 130vh;
+    }
+    .hero_div{
+        margin-top: 3em;
+    }
+    .hero_div h1{
+        font-size: 3em;
+    }
+    .column{
+        flex-direction: column;
+    }
+    .card, .icon_card, .video_bg, .hero_div, .about_event_right, .schedule{
+        margin: 15px;
+        /* border: 1px solid red; */
+    }
+    /* ------------------------------------schedule */
+    .schedule .date, .schedule .line{
+        display: none;
+    }
+    .schedule .image{
+        width: 100%;
+        padding-top: 30px;
+    }
+    .schedule h3{
+        font-size: 22px;
+    }
+    /* --------------------------------------------- */
+    .about_event img{
+        width: 100%;
+    }
+    .video_bg{
+        height: 50vh;
+    }
+    .video_bg .play_btn{
+        width: 50px;
+    }
+    footer .quick_links{
+        margin: auto;
+        text-align: center;
+    }
+    footer .follow{
+        margin: auto;
+        margin-top: 20px;
+    }
+    footer .follow ul a{
+        display: block;
+        margin: auto;
+        margin-left: 20px;
+    }
+    
+}
